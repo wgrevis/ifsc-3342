@@ -5,10 +5,12 @@
 body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	background-image: url("https://github.com/wgrevis/ifsc-3342/blob/main/pre-assessment/img/bg-tile.jpg");
+	background-image: url("https://github.com/wgrevis/ifsc-3342/blob/main/pre-assessment/img/bg-tile.jpg?raw=true");
+	background-position-x: repeat;
 	background-color: #171717;
 	font-size: 16px;
 	line-height: 1.5em;
+
 }
 #container {
 	max-width: 800px;
@@ -20,21 +22,21 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
-	
+	background-image: url("https://github.com/wgrevis/ifsc-3342/blob/ee0788d0099d542b1bd960003fb8ede0e72de35c/pre-assessment/resources/assessment-4.jpg?raw=true");
 }
 #header h1 a {
 	background-position: center;
     background-size: cover;
     display: block;
     width: 800px;
-    height: 100px;
+    height: 110px;
     margin: 0 auto;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
 }
 #nav {
-	background-color: #000;
+	background-color: rgb(157, 155, 155)
 }
 #nav ul {
 	list-style-type: none;
@@ -55,7 +57,7 @@ body {
 	text-decoration: none;
 	border-bottom-width: 4px;
 	border-bottom-style: solid;
-	border-bottom-color: #000;
+	border-bottom-color: rgb(157, 155, 155);
 	color: #FFF;
 }
 #nav ul li a:hover {
@@ -70,8 +72,49 @@ body {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+
+#content p a:hover {
+	background-color: rgb(255, 182, 127);
+
+}
+
+#content img {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 10px solid #CCC;
+}
+
+div.alert {
+	background-color: gray;
+	color: #FFF;
+
+}
+
+h2 {
+	text-shadow: 2px 2px rgb(190, 190, 190);
+}
+
+h3 {
+	text-shadow: 2px 2px rgb(190, 190, 190);
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h4 {
+	text-shadow: 2px 2px rgb(216, 216, 216);
+	background-color: #CCC;
+	border-radius: 40px;
+	padding: 15px;
+	position: relative;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+}
+
 #footer {
-	background-color: #000;
+	background-color: rgb(157, 155, 155);
 	color: #FFF;
 	height: 25px;
 }
