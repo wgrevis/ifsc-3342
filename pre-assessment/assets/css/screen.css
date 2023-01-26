@@ -1,3 +1,5 @@
+/* reset margin and padding around all the elements, it is target everything and reseting the margin and the padding on them. */
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -5,8 +7,8 @@
 body {
 	text-align: center;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	background-image: url("https://github.com/wgrevis/ifsc-3342/blob/main/pre-assessment/img/bg-tile.jpg?raw=true");
-	background-position-x: repeat;
+	background-image: url("../img/bg-tile.jpg");
+	background-repeat: repeat-x;
 	background-color: #171717;
 	font-size: 16px;
 	line-height: 1.5em;
@@ -22,15 +24,14 @@ body {
 	border: 1px solid #CCC;
 }
 #header {
-	background-image: url("https://github.com/wgrevis/ifsc-3342/blob/ee0788d0099d542b1bd960003fb8ede0e72de35c/pre-assessment/resources/assessment-4.jpg?raw=true");
+
 }
+
 #header h1 a {
-	background-position: center;
-    background-size: cover;
     display: block;
     width: 800px;
-    height: 110px;
-    margin: 0 auto;
+    height: 140px;
+	background-image: url("https://github.com/wgrevis/ifsc-3342/blob/ee0788d0099d542b1bd960003fb8ede0e72de35c/pre-assessment/resources/assessment-4.jpg?raw=true");
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -73,28 +74,31 @@ body {
 	margin-bottom: 15px;
 }
 
-#content p a:hover {
-	background-color: rgb(255, 182, 127);
+#content a:hover {
+	background-color: rgb(240, 117, 23);
 
 }
 
-#content img {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border: 10px solid #CCC;
+.img-right {
+	float: right;
+	border-style: solid;
+	margin: 15px 10px 15px 10px;
+	border-color: rgb(10, 0, 0);
 }
 
-div.alert {
+.alert {
 	background-color: gray;
+	padding: 10px;
 	color: #FFF;
+	clear: both;
 
 }
 
-h2 {
+#content h2 {
 	text-shadow: 2px 2px rgb(190, 190, 190);
 }
 
-h3 {
+#content h3 {
 	text-shadow: 2px 2px rgb(190, 190, 190);
 	position: relative;
     display: flex;
@@ -102,7 +106,7 @@ h3 {
     justify-content: center;
 }
 
-h4 {
+#content h4 {
 	text-shadow: 2px 2px rgb(216, 216, 216);
 	background-color: #CCC;
 	border-radius: 40px;
@@ -119,7 +123,7 @@ h4 {
 	height: 25px;
 }
 #footer h6 {
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 25px;
 	margin-right: 20px;
 	margin-left: 20px;
