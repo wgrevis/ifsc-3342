@@ -36,25 +36,54 @@ main {
 }
 
 header.primary, footer.primary {
-  width: 1195px;
-  margin: 40px;
+  width: 93.72%;
+  margin: 3.137255%;
   background-color: rgba(0, 0, 0, 0.4);
   float: left;
-  padding: 20px;
+  padding: 1.568627%;
 }
 
 #blog {
-  width: 590px;
+  width: 65.176471%;
   background-color: rgba(0, 0, 0, 0.4);
   float: left;
-  margin-left: 40px;
-  padding: 40px;
+  margin-left: 3.137255%;
+  padding: 3.137255%;
 }
 
 aside {
-  width: 262px;
+  width: 27.45098%;
   float: left;
   background-color: rgba(0, 0, 0, 0.4);
-  margin-left: 135px;
-  padding: 20px;
+  margin-left: 1.176471%;
+  padding: 1.568627%;
+}
+
+
+
+@media screen and (min-width:400px){
+  main{
+    background:orange;
+    width:30vw;
+  }
+  main > *{
+  float:none;  
+  }
+}
+  
+}
+
+@media screen and (min-width:800px){
+  main{
+    background:green;
+    width:50vw;
+  }
+}
+
+@media screen and (min-width:1000px){
+  main{
+    background:blue;
+    width:70vw;
+  }
+  
 }
