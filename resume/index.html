@@ -1,131 +1,56 @@
-<header>
-    <!-- Main navigation -->
-    <nav class="primary">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-    </nav>
-    <link rel="stylesheet" href="/resume/css/style.css">
-  </header>
-  <!-- Main -->
-  <main itemscope itemtype="http://schema.org/Person">
-    <link rel="stylesheet" href="/resume/css/style.css">
-    <h1>William Revis</h1>
-    <section id="about">
-      <h2>Personal details</h2>
-      <img itemprop="image" src="https://fakeimg.pl/400/" alt="William Revis">
-      <p itemprop="description">Statement of Intent</p>
-      <dl>
-        <dt>Name</dt>
-        <dd itemprop="name">
-          <span itemprop="givenName">First Name</span> <span itemprop="familyName">Last name</span>
-        </dd>
-        <dt>Date of birth</dt>
-        <dd itemprop="birthDate"><time datetime="1976-10-12">10/12/1976</time></dd>
-        <dt>American</dt>
-        <dd itemprop="nationality">Nationality</dd>
-        <dt>Little Rock, AR</dt>
-        <dd itemprop="homeLocation">State</dd>
-        <dt>Telephone</dt>
-        <dd>
-          <a itemprop="telephone" href="tel:555.555.5555">111.111.111</a>
-        </dd>
-        <dt>Email</dt>
-        <dd>
-          <a itemprop="email" href="mailto:wgrevis@gmail.com">wgrevis@gmail.com</a>
-        </dd>
-        <dt>Address</dt>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../resume/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="streetAddress">2801 South University</span>
-          <span itemprop="addressLocality">Little Rock</span>
-          <span itemprop="postalCode">72204</span>
-          <span itemprop="addressCountry">USA</span>
-        </dd>
-
-      </dl>
-      <ul class="related-links">
-        <li><a itemprop="url" rel="me" href="https://github.com/wgrevis">github</a></li>
+</head>
+<body>
+<header class="container">
+  <nav class="primary">
+    <a href="index.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="exp.html">Experience</a>
+    <a href="edu.html">Education</a>
+  </nav>
+</header>
+<!-- Main -->
+<main itemscope itemtype="http://schema.org/Person" class="container">
+  <h1>William (Griffin) Revis</h1>
+  <section id="about">
+    <h2 class="visuallyhidden">Personal details</h2>
+    <img itemprop="image" src="../resume/img/resumepic.jpg" alt="William Revis">
+    <p itemprop="description"> William Revis is a Web Design & Development Major at UA Little Rock.</p>
+    <dl>
+      <dt>Name</dt>
+      <dd itemprop="name">
+        <span itemprop="givenName">William (Griffin) </span> <span itemprop="familyName">Revis</span>
+      </dd>
+      <dt>Date of birth</dt>
+      <dd itemprop="birthDate"><time datetime="2001-06-26">06/26/2001</time></dd>
+      <dt>Nationality</dt>
+      <dd itemprop="nationality">United States (American)</dd>
+      <dt>Location</dt>
+      <dd itemprop="homeLocation">Arkansas</dd>
+      <dt>Email</dt>
+      <dd>
+        <a href="mailto:wgrevis@ualr.edu" itemprop="email">wgrevis@ualr.edu</a>
+      </dd>
+    </dl>
+     <ul class="related-links">
         <li><a itemprop="url" rel="me" href="https://www.linkedin.com/in/griffin-revis-0944a2242/">linkedin</a></li>
-        <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
-      </ul>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li class="skill">HTML</li>
-        <li class="skill">Basic Compute Knowledge</li>
-        <li class="skill">Python</li>
-      </ul>
-    </section>
-    <section id="experience">
-      <h2>Experience</h2>
-      <!-- current job -->
-      <article class="job">
-        <h3 itemprop="jobTitle">Lead Web Developer</h3>
-        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          <span itemprop="name">Company Name 1</span>
-          <span>February 2010 - Present</span>
-          <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
-          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="addressLocality">Anywhere,USA</span>
-          </span>
-          </span>
-        </div>
-      </article>
-      <!-- Previous Jobs - Notice Slightly Different Format-->
-      <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Senior Developer</h3>
-          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Company Name 2</span>
-          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Anywhere,USA</span>
-          </span>
-          </span>
-          <span itemprop="startDate" content="2006-02-21T20:00">February 2006</span>
-          <span itemprop="endDate" content="2009-02-21T20:00">February 2009</span>
-        <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
-      </article>
-      <article class="job" itemscope itemtype="http://schema.org/Organization">
-        <h3 itemprop="name">Web Developer</h3>
-          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name">Company Name 2</span>
-          <a itemprop="url" href="http://link-to-company.com">Company URL</a>
-          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <span itemprop="addressLocality">Anywhere, USA</span>
-          </span>
-          </span>
-          <span itemprop="startDate" content="2004-01-21T20:00">January 2004</span>
-          <span itemprop="endDate" content="2006-02-21T20:00">February 2006</span>
-        <p itemprop="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
-      </article>
-    </section>
-    <section id="education">
-      <h2>Education</h2>
-      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-        <h3 itemprop="description"><abbr title="Master of Science">BA</abbr>Web Design and Development</h3>
-          <span itemprop="name">University name 1</span>
-          <span itemprop="location" itemscope>Anywhere, USA</span>
-          <span>2005-2007</span>     
-      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-        <h3 itemprop="description">High School Diploma</h3>
-            <span itemprop="name">Benton High School</span>
-            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-               <span itemprop="streetAddress">211 N Border St</span>
-               <span itemprop="addressLocality">Benton</span>,
-               <span itemprop="addressRegion">AR</span> <span itemprop="postalCode">94301</span>
-             </div>
-           </div>
-      </article>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer>
-    <div id="copyright">
-      &copy; company. All rights reserved.
-    </div>
-  </footer>
+        <li><a itemprop="url" rel="me" href="https://github.com/wgrevis"><i class="fab fa-github-square"></i> github</a></li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <div id="copyright">
+    &copy; 2023 William Revis | <a href="#top">Top</a>
+  </div>
+</footer>
+</body>
+</html>

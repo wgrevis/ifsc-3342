@@ -6,17 +6,20 @@ html {
 }
 
 /* ------ Typography -------*/
-body{font-family: 'Open Sans', sans-serif;}
+body{font-family: 'Roboto', sans-serif;}
 
 /* ------ Fluid Images -------*/
 
 img{max-width:100%;}
+img{border-radius: 5px;}
 
 /* ------ Utility Classes  -------*/
 .container{
   margin:0 auto;
-  background:rgba(0,0,0,.15);
+  background-color: #073B5C;
   width:480px;
+  border: 1px solid #000;
+  border-radius:6px;
 }
 
 /* ------ Helper Classes -------*/
@@ -34,38 +37,42 @@ img{max-width:100%;}
 
 /* ------ Global Styles -------*/
 body{
-  background:#efefef;
-  color:#222222;
-  line-height:1.6
+  background:#c7c7c7;
+  color: black;
+  line-height:1.8;
 } 
 a:link, a:visited{
-  color:#222;
+  color:rgb(165, 165, 165);
 }
 
 nav{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding:20px 20px 0px 20px;
+  padding: 10px 10px 10px 10px;
+  
 }
 nav a:link, nav a:visited{
-  border:1px solid #000;
-  padding:8px 16px;
+  padding:8px 8px;
   text-align:center;
   text-decoration:none;
   color:#222222;
   text-transform:uppercase;
-  font-size:.75em;
-  background:rgba(0,0,0,.65);
-  transition: background-color .5s ease;
-  color:#fff;
+  font-size:.8em;
+  background:#0068A8;
+  transition: background-color .10s ease;
+  color:#000;
+  border:2px solid #000;
+  border-radius:150px;
+  margin: 5px 5px;
+  cursor: help;
 }
 
 nav a:hover{
-   background:rgba(0,0,0,.95);
+   background:rgba(173, 173, 173, 0.95);
 }
 
 main{
-  padding: 1px 20px;
+  padding: 10px 30px;
 }
 
 main h1 {
@@ -73,17 +80,22 @@ main h1 {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  font-weight:400;
-  font-variant:small-caps;
+  font-weight:800;
+  font-variant-caps: all-small-caps;
+  border-width:3px;
+  border-style:solid;
+  border-radius: 15px;
+  border-color:#0068A8;
 }
+
 main h1:before, main h1:after {
-  background-color: #222;
-  content: '\a0';
+  background-color: #44A5E1;
   flex-grow: 1;
   height: 1px;
   position: relative;
-  top: 0.77em;
+  top: 1em;
 }
+
 main h1:before {
   margin-right:15px;
 }
@@ -97,64 +109,81 @@ dl{
   grid-template-columns:8em 1fr;
   /*shorthand*/
   grid-template: auto / 8em 1fr;
+  border:5px solid #0068A8;
+  border-radius:15px;
+  margin: 5px 5px;
 }
 
 dt{
-  font-weight:800;
+  font-weight:700;
   grid-column: 1;
-  padding: 10px 0;
-  border-bottom:1px solid #999;
+  padding: 10px 10px;
+  border: 2px solid #0068A8;
 }
-dd{
+
+dd {
   margin:0;
   grid-column: 2;
-  padding: 10px 0;
-  border-bottom:1px solid #999;
- 
+  padding: 10px 10px;
+  border: 2px solid #0068A8;
 }
+
 .related-links{
   display:flex;
   justify-content:center;
   list-style:none;
-  padding:0;
+  padding: 0px;
 }
 .related-links .svg-inline--fa{
   font-size:1.8em;
   padding-top:7px;
+
 }
 
 .related-links a{
-  border:1px solid #000;
-  padding:8px 16px;
+  padding:8px 8px;
   text-align:center;
   text-decoration:none;
   color:#222222;
   text-transform:uppercase;
-  font-size:.75em;
-  background:rgba(0,0,0,.65);
-  transition: background-color 0.5s ease;
-  color:#fff;
+  font-size:.8em;
+  background:#0068A8;
+  transition: background-color .10s ease;
+  color:#000;
+  border:2px solid #000;
+  border-radius:150px;
+  margin: 5px 5px;
+  cursor: help;
 }
 
 .related-links a:hover{
-  background:rgba(0,0,0,.95);
+  background:rgba(173, 173, 173, 0.95);
 }
 
 .related-links li{
   margin-right:20px;
 }
-/* ------ Global Styles
+
 #skills{
-  
+  padding-bottom:60px;
+  border-radius: 15px;
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-lobal Styles -------*/
+
 #skills li {
-  list-style-type:square;
+  list-style-type:circle;
 }
 
 .job, .certificate{
-  border-bottom:1px solid #999;
-  padding-bottom:20px;
+  border-radius: #000;
+  border-radius: 15px;
+  border: solid;
+  padding: 5px;
+  margin: 20px 20px;
+
 }
 
 .job *[itemprop="jobTitle"], 
@@ -164,13 +193,31 @@ lobal Styles -------*/
 .certificate *[itemprop="name"]
 {
   display:block;
+  font-weight:700;
 }
 
 .job h3{
-  margin:20px 0 0 0;
+  font-weight:800;
+  color: #000000;
+  text-align: center;
+}
+
+#skills h2{
+  text-align: center;
+  font-weight:800;
+  color: #000000;
+  text-align: center;
+}
+
+#education h2{
+  text-align: center;
+}
+
+#experience h2{
+  text-align: center;
 }
 
 footer{
-  text-align:center;
+text-align:center;
 padding:20px 0;
 }
