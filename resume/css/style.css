@@ -12,12 +12,16 @@ body{font-family: 'Roboto', sans-serif;}
 
 img{max-width:100%;}
 img{border-radius: 5px;}
+img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* ------ Utility Classes  -------*/
 .container{
   margin:0 auto;
   background-color: #073B5C;
-  width:480px;
   border: 1px solid #000;
   border-radius:6px;
 }
@@ -59,7 +63,7 @@ nav a:link, nav a:visited{
   text-transform:uppercase;
   font-size:.8em;
   background:#0068A8;
-  transition: background-color .10s ease;
+  transition: background-color .9s ease;
   color:#000;
   border:2px solid #000;
   border-radius:150px;
@@ -103,6 +107,7 @@ main h1:after {
   margin-left:15px;
 }
 
+
 dl{
   display: grid;
   grid-template-rows:auto;
@@ -127,6 +132,14 @@ dd {
   padding: 10px 10px;
   border: 2px solid #0068A8;
 }
+
+p[itemprop="description"] {
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
 
 .related-links{
   display:flex;
@@ -165,31 +178,95 @@ dd {
 }
 
 #skills{
-  padding-bottom:60px;
-  border-radius: 15px;
-  border: solid;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  border-color: black;
 }
 
 #skills li {
-  list-style-type:circle;
+  margin-bottom: 10px;
+  list-style-type: disc;
 }
+
 
 .job, .certificate{
   border-radius: #000;
   border-radius: 15px;
   border: solid;
-  padding: 5px;
-  margin: 20px 20px;
-
+  padding: 15px;
+  margin: 50px 40px;
+  border-color: #0068A8;
+  background-color: #0068A8;
 }
 
-.job *[itemprop="jobTitle"], 
-.job *[itemprop="name"], 
-.job *[itemprop="url"], 
+h3[itemprop="jobTitle"] {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.job *[itemprop="jobTitle"] {
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: #000;
+  border-radius: 10px;
+  border: solid;
+  padding: 5px;
+}
+.job *[itemprop="name"] {
+  font-size: 1.5em;
+  border-radius: #000;
+  border-radius: 15px;
+  border: solid;
+  padding: 5px;
+}
+.job *[itemprop="url"] {
+  text-align:center;
+  text-decoration:none;
+  border-radius: #000;
+  border-radius: 15px;
+  border: solid;
+  padding: 5px;
+  line-height: 20px;
+  color: #000;
+  transition: background-color .5s ease;
+}
+
+
+.job *[itemprop="url"]:hover {
+  background:rgba(173, 173, 173, 0.95);
+  
+}
+
+.certificate h3[itemprop="description"] {
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: #000;
+  border-radius: 10px;
+  border: solid;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.certificate *[itemprop="name"] {
+  font-size: 1.5em;
+  border-radius: #000;
+  border-radius: 15px;
+  border: solid;
+  padding: 5px;
+  text-align: center;
+}
+.certificate *[itemprop="StartDate"] {
+  font-size: 1.5em;
+  border-radius: #000;
+  border-radius: 15px;
+  border: solid;
+  padding: 5px;
+}
+
 .job *[itemprop="addressLocality"],
+
+
 .certificate *[itemprop="name"]
 {
   display:block;
@@ -207,17 +284,67 @@ dd {
   font-weight:800;
   color: #000000;
   text-align: center;
+  text-align: center;
+  border-radius: #000;
+  border-radius: 15px;
+  border: solid;
+  padding: 15px;
+  margin: 50px 40px;
+  border-color: #000000;
+  background-color: #0068A8;
 }
 
 #education h2{
   text-align: center;
+  border-radius: #000;
+  border-radius: 15px;
+  border: solid;
+  padding: 15px;
+  margin: 50px 40px;
+  border-color: #000000;
+  background-color: #0068A8;
 }
 
 #experience h2{
   text-align: center;
+  border-radius: #000;
+  border-radius: 15px;
+  border: solid;
+  padding: 15px;
+  margin: 50px 40px;
+  border-color: #000000;
+  background-color: #0068A8;
 }
 
 footer{
 text-align:center;
 padding:20px 0;
+}
+
+
+/* ------ Media Queries -------*/
+
+/* ------ Media Queries
+@media screen and (min-width:768px;){
+  main.container{
+    max-width: 900px;
+    grid-template-columns: 36.5% auto;
+    grid-template-areas: 
+      "title"
+      "about"
+      "skills experience"
+      ".education" ;
+}
+
+
+
+} -------*/
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1024px) {
 }
