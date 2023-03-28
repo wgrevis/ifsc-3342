@@ -195,6 +195,7 @@ p[itemprop="description"] {
   margin: 50px 40px;
   border-color: #0068A8;
   background-color: #0068A8;
+  text-align: center;
 }
 
 h3[itemprop="jobTitle"] {
@@ -211,14 +212,21 @@ h3[itemprop="jobTitle"] {
   border-radius: 10px;
   border: solid;
   padding: 5px;
+  text-align: center;
 }
-.job *[itemprop="name"] {
+.job [itemprop="worksFor"] [itemprop="name"] {
   font-size: 1.5em;
   border-radius: #000;
   border-radius: 15px;
   border: solid;
   padding: 5px;
+  text-align: center;
 }
+
+.job span:not([itemprop="name"]) {
+  text-align: center;
+}
+
 .job *[itemprop="url"] {
   text-align:center;
   text-decoration:none;
@@ -229,8 +237,9 @@ h3[itemprop="jobTitle"] {
   line-height: 20px;
   color: #000;
   transition: background-color .5s ease;
-}
+  white-space: nowrap;
 
+}
 
 .job *[itemprop="url"]:hover {
   background:rgba(173, 173, 173, 0.95);
@@ -239,29 +248,36 @@ h3[itemprop="jobTitle"] {
 
 .certificate h3[itemprop="description"] {
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 5px;
   border-radius: #000;
-  border-radius: 10px;
+  border-radius: 15px;
   border: solid;
-  padding: 5px;
   text-align: center;
 }
 
 
 .certificate *[itemprop="name"] {
-  font-size: 1.5em;
-  border-radius: #000;
-  border-radius: 15px;
-  border: solid;
-  padding: 5px;
   text-align: center;
-}
-.certificate *[itemprop="StartDate"] {
   font-size: 1.5em;
-  border-radius: #000;
-  border-radius: 15px;
-  border: solid;
-  padding: 5px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.certificate [itemprop="startDate"],[itemprop="endDate"] {
+  font-size: 1em;
+  font-weight: 400;
+  color: #c2c2c2;
+  margin-bottom: 10px;
+}
+
+.certificate *[itemprop="address"] {
+  font-size: 10px;
+  font-weight: 400;
+  color: #c2c2c2;
+  margin-bottom: 10px;
 }
 
 .job *[itemprop="addressLocality"],
