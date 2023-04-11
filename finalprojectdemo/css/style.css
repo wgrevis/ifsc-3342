@@ -1,0 +1,72 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: #0087c5
+}
+
+li::marker{font-size:0;}
+
+.section-padding{
+    padding: 100px 0;
+}
+
+.navbar-nav a{
+    font-size: 17.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-brand{
+    font-size: 40px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 1;
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 200px;
+}
+
+.carousel-caption{
+    bottom: 400px;
+    z-index: 2;
+}
+
+
+.carousel-caption h5{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin: 25px;
+}
+
+.carousel-caption p{
+    width: 50%;
+    margin: auto;
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.carousel-caption a{
+    line-height: 1;
+    word-spacing: 2;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.carousel-inner::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 5, 5, 0.5);
+    z-index: 1;
+}
+
