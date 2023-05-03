@@ -4,123 +4,59 @@
 }
 
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    background-color: #05F296;
-    overflow: auto;
+  background-image: url("/hpassets/img/mickeymouse.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header.primary {
-    background-color: #054EF2;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-shadow: 3px 3px #585858;
-    color: #05F296;
-    padding: 40px 80px;
+.personal-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 50%;
 }
 
-header.primary h1 {
-    font-size: 3.6rem;
-    margin: 10px 20px;
+.name {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
 }
 
-html {
-    box-sizing: border-box;
-}
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
+.navigation {
+  text-align: center;
+  margin-top: 20px;
 }
 
-  
-.row{
-    display:grid;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap:20px;
+li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  margin: 10px;
 }
-  
-.col{
-    padding:100px;
-    border:1px solid #c0c0c0;
-    border-radius:6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    margin: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-  
-  /* Base */
-.col:nth-child(odd) {
-    background-color: #8fb87f;
-}
-.col a {
-    color: #05F295;
-    margin: 0px;
-    text-shadow: 1px 1px #494949;
-}
-.fancy {
-    display: none;
-}
-  
-  /* Max Width */
-  
-@media screen and (max-width:600px){
-    .row{
-      grid-template-columns:1fr;
-    }
-}
-  
-  /* Ranged */
-  
-@media screen and (max-width:800px) and (min-width:601px){
-    .row{
-      grid-template-columns:repeat(2,1fr);
-    }
-    .col:nth-child(odd) {
-      background-color: #05FCE2;
-    }
-    .col:nth-child(even) {
-      background-color: #05FCE2;
-    }
-}
-  
-  /* Min Width */
-  
-@media screen and (min-width:801px){
-    .row {
-      grid-template-columns:repeat(4,1fr);
-    }
-    body .col:nth-child(odd) {
-      background-color: #05FCE2;
-    }
-    body .col:nth-child(even) {
-      background-color: #05FCE2;
-    }
-      
-}
-    
+
+
+
+
 
   
-  /*retina specific --- https://goo.gl/Pgu6y */
+  /* Media */
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  }
   
-  
-@media
-  only screen and (-webkit-min-device-pixel-ratio: 1.25),
-  only screen and ( min--moz-device-pixel-ratio: 1.25),
-  only screen and ( -o-min-device-pixel-ratio: 1.25/1),
-  only screen and ( min-device-pixel-ratio: 1.25),
-  only screen and ( min-resolution: 200dpi),
-  only screen and ( min-resolution: 1.25dppx)
-  {
-      .fancy{display:block; text-align:center}
-}
+  /* Phone */
+  @media only screen and (max-width: 768px) {
+  }
+  /* Desktop */
+  @media only screen and (min-width: 1025px) {
+  }
