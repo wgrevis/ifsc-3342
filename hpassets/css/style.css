@@ -4,50 +4,92 @@
 }
 
 body {
-  background-image: url("/hpassets/img/mickeymouse.jpg");
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
+  background-image: url("/hpassets/img/RFb3DO.png");
+  height: 100vh;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.personal-photo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  height: auto;
-  max-width: 200px;
-  border-radius: 50%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .name {
   text-align: center;
+  background-color: #141414;
+  color: #EEEEEE;
+  font-weight: bolder;
+  text-transform: uppercase;
   padding: 30px;
-  font-size: 20px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 25px 5px #B8B8B8;
+  border-radius: 40px;
 }
 
 .navigation {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
 li {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  margin: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #141414;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  text-decoration: none;
 }
 
+.listgroup li {
+  margin-bottom: 10px;
+}
 
+li:hover{
+  transform: scale(1.1);
+  background-color: #B8B8B8;
+  cursor: pointer;
+}
 
+li.finalprojects{
+  transform: none;
+  background-color: #141414;
+  cursor: no-drop;
+}
 
+ul{
+  display: flex;
+  justify-content: space-around;
+}
 
+li {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
   
   /* Media */
 
