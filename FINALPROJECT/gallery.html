@@ -5,13 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buffalo River Final Project</title>
-  <meta name="description" content="Gallery" />
+  <meta name="description" content="Homepage" />
   <meta name="author" content="William Revis" />
   <link rel="stylesheet" href="/FINALPROJECT/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kanit:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <script src="/FINALPROJECT/js/index.js"></script>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="/FINALPROJECT/imgs/BNR-Logo.jpg"></a>
+      <div class="nav-link" id="navLinks">
+        <i class="fa fa-solid fa-xmark fa-lg" onclick="hideNav()"></i>
+        <ul>
+          <li><a href="index.html" ><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+          <li><a href="history.html"><i class="fa-solid fa-landmark-dome"></i> History</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-solid fa-list" onclick="openNav()"></i>
+    </nav>
+  </section>
+
+  <div class="slideshow-container">
+    <img src="/FINALPROJECT/imgs/bnrlogo2.png" class="slideshow-image">
+    <img src="image2.jpg" class="slideshow-image">
+    <img src="image3.jpg" class="slideshow-image">
+  </div>
   
 
-    
+
+<!------Information----->
+
+<section class="information">
+  <h1>Some fun activities!</h1>
+  <p>There are many things to do at the Buffalo River. The river offers a wide varity of activies and things to do with family, such as, Floating, Hiking down many trails, Camping Out, Stay the night for the amazing star view, Fun in the sun with pets, History and Culture, etc.</p>
+  <!------Informational Cards----->
+
+  <div class="r">
+    <div class="card-c">
+        <h2>Floating and Paddling!</h2>
+        <p><img src="imgs/float and paddle.jpg" class="card-img">Floating/Paddling</p>
+    </div>
+    <div class="card-c">
+      <h2>Camping out!</h2>
+      <p><img src="imgs/campout.jpg" class="card-img">Campout</p>
+    </div>
+    <div class="card-c">
+    <h2>Hiking!</h2>
+    <p><img src="imgs/buafflo hike.jpg" class="card-img">Floating/Paddling</p>
+    </div>
+  </div>
+
+
+<iframe src="https://www.nps.gov/media/video/embed.htm?id=EDF32BD4-989D-4F95-B720-4E409CB0B695" width="480" height="306" frameborder="0" scrolling="auto" allowfullscreen></iframe>
+
+
+</section>
 </body>
 </html>

@@ -74,6 +74,7 @@ nav img{
 .content h1{
     font-size: 70px;
     text-transform: uppercase;
+    font-weight: 800;
 }
 
 .content p{
@@ -101,19 +102,152 @@ nav img{
 }
 
 
+.information {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 300;
+    color: #C6814F;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 16px;
+    color: #5A6534;
+}
+
+.r{
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-c{
+    flex-basis: 33%;
+    background: #C6814F;
+    border-radius: 5px;
+    margin-bottom: 10%;
+    padding: 15px 6px;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.card-c:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+} 
+
+.card-c img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.history{
+    border-top:2px solid #5A6534;
+    padding-top: 5%;
+    background: url(/FINALPROJECT/imgs/BNR_50thLogo_Color_1.png);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.history p{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 15px;
+    margin: 150px;
+    text-align: center;
+    color: #FBC006;
+    background: #081621;
+    border-radius: 5px;
+}
 
+.history h1{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 15px;
+    margin: 150px;
+    text-align: center;
+    color: #FBC006;
+    background: #081621;
+    border-radius: 5px;
+}
 
+.about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-top: 2px solid #5A6534;
+    border-bottom: 2px solid #5A6534;
+}
 
 
+.socials{
+    color: #c6814f;
+}
 
 
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+}
+  
+.slideshow-image {
+    width: 100%;
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+.slideshow-image:first-child {
+    display: block;
+}
+  
 
+.content li{
+    display: block;
 
+}
 
 
+.fa.fa-map-marker, .fa.fa-phone {
+    color:#000000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 7px;
+    text-decoration: none;
+}
 
 
+.about {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
 
+.map{
+    width: 400; 
+    height: 2300;
+}
 
 
 
@@ -180,59 +314,62 @@ nav img{
 
 
 
+nav .fa{
+    display:none;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 700px){
+@media(max-width: 720px){
     .content h1{
         font-size: 30px;
-    }
+}
+    .history p, .history h1 {
+    margin: 50px;
+    padding: 10px;
+  }
     .nav-link ul li{
         display: block;
-    }
-    .nav-link{
-        position: absolute;
-        background: #C6814F;
-        height: 100vh;
-        width: 150px;
-        top: 0;
-        right: 0;
-        text-align: center;
-        z-index: 2;
-        border-radius: 2px;
-    }
+}
     nav .fa{
         display: block;
         color: #5A6534;
         text-align: left;
-        margin: 4px;
+        margin: 15px;
         font-size: 25px;
         cursor: pointer;
-
-    }
-    .nav-link ul{
-        padding: 0px;
-    }
 }
+    .nav-link ul{
+        padding: 5px;
+}
+    .nav-link{
+        position: absolute;
+        background: #C6814F;
+        height: 100vh;
+        width: 175px;
+        top: 0;
+        right: -175px;
+        text-align: right;
+        z-index: 2;
+        border-radius: 5px;
+        transition: .8s;
+}
+    .r{
+        flex-direction: column;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .card-c img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .card-c img {
+      max-width: none;
+      height: 100%;
+    }
+  }
+  
