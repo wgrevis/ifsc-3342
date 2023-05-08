@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url("/hpassets/img/RFb3DO.png");
+  background: url(/hpassets/img/RFb3DO.png);
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
