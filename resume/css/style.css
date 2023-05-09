@@ -338,23 +338,11 @@ padding:20px 0;
 }
 
 
-/* ------ Media Queries -------*/
-
-/* ------ Media Queries
-@media screen and (min-width:768px;){
-  main.container{
-    max-width: 900px;
-    grid-template-columns: 36.5% auto;
-    grid-template-areas: 
-      "title"
-      "about"
-      "skills experience"
-      ".education" ;
-}
 
 
 
-} -------*/
+
+
 
 @media only screen and (max-width: 768px) {
 }
