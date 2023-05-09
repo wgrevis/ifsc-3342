@@ -18,7 +18,6 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid #C6814F;
 }
 
 nav img{
@@ -109,6 +108,10 @@ nav img{
     padding-top: 40px;
 }
 
+.information p{
+    text-transform: uppercase;
+}
+
 h1{
     font-size: 50px;
     font-weight: 300;
@@ -157,69 +160,18 @@ h2{
     height: auto;
 }
 
-.history{
-    border-top:2px solid #5A6534;
-    padding-top: 5%;
-    background: url(/buffalofinal/assets/imgs/BNR_50thLogo_Color_1.png);
-    min-height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.history p{
-    font-size: 20px;
-    line-height: 20px;
-    padding: 15px 15px;
-    margin: 150px;
-    text-align: center;
-    color: #FBC006;
-    background: #081621;
-    border-radius: 5px;
-}
-
-.history h1{
-    font-size: 20px;
-    line-height: 20px;
-    padding: 15px 15px;
-    margin: 150px;
-    text-align: center;
-    color: #FBC006;
-    background: #081621;
-    border-radius: 5px;
-}
 
 .about{
     margin-top: 50px;
     margin-bottom: 50px;
-    border-top: 2px solid #5A6534;
-    border-bottom: 2px solid #5A6534;
 }
 
 
-.socials{
+.fa-brands.fa-square-facebook, .fa-brands.fa-square-instagram, .fa-brands.fa-square-twitter, .fa-solid.fa-pager {
     color: #c6814f;
+    font-size: 2em;
 }
 
-
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-}
-  
-.slideshow-image {
-    width: 100%;
-    height: auto;
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-  
-.slideshow-image:first-child {
-    display: block;
-}
   
 
 .content li{
@@ -249,17 +201,38 @@ h2{
     height: 2300;
 }
 
+.socials{
+    padding: 40px;
+
+}
 
 
+.footer-bottom{
+    border-top: 2px solid #5A6534;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
 
 
+h6{
+    color: #C6814F;
+    display: block;
+    text-decoration: none;
+}
 
+h6 a{
+    color: #C6814F;
+    text-decoration: none;
+}
 
-
-
-
-
-
+.card-img {
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+}
 
 
 
@@ -320,56 +293,100 @@ nav .fa{
 
 
 
-@media(max-width: 720px){
-    .content h1{
-        font-size: 30px;
-}
-    .history p, .history h1 {
-    margin: 50px;
-    padding: 10px;
-  }
-    .nav-link ul li{
-        display: block;
-}
-    nav .fa{
-        display: block;
-        color: #5A6534;
-        text-align: left;
-        margin: 15px;
-        font-size: 25px;
-        cursor: pointer;
-}
-    .nav-link ul{
-        padding: 5px;
-}
-    .nav-link{
-        position: absolute;
-        background: #C6814F;
-        height: 100vh;
-        width: 175px;
-        top: 0;
-        right: -175px;
-        text-align: right;
-        z-index: 2;
-        border-radius: 5px;
-        transition: .8s;
-}
-    .r{
-        flex-direction: column;
-}
-}
-
-@media screen and (max-width: 768px) {
-    .card-c img {
-      max-width: 100%;
-      height: auto;
+/* For tablet devices */
+@media screen and (min-width: 601px) and (max-width: 960px) {
+    .content h1 {
+      font-size: 24px;
+    }
+    .content p {
+      font-size: 16px;
+    }
+    .about h1 {
+        font-size: 24px;
+    }
+    .about p {
+        font-size: 16px;
+    }
+    .nav-link {
+      position: absolute;
+      background: #C6814F;
+      height: 100vh;
+      width: 175px;
+      top: 0;
+      right: -175px;
+      text-align: right;
+      z-index: 2;
+      border-radius: 5px;
+      transition: .8s;
+    }
+    .nav-link ul li {
+      display: block;
+    }
+    .nav-link ul {
+      padding: 5px;
+    }
+    nav .fa {
+      display: block;
+      color: #5A6534;
+      text-align: left;
+      margin: 15px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    .r {
+      flex-direction: column;
+    }
+    html, body {
+      overflow-x: hidden;
     }
   }
   
-  @media screen and (min-width: 769px) {
-    .card-c img {
-      max-width: none;
-      height: 100%;
+  /* For mobile devices */
+  @media screen and (max-width: 600px) {
+    .content h1 {
+      font-size: 15px;
+    }
+    .content p {
+      font-size: 7px;
+    }
+    .about h1 {
+        font-size: 15px;
+    }
+    .about p {
+        font-size: 7px;
+    }
+    .nav-link {
+      position: absolute;
+      background: #C6814F;
+      height: 100vh;
+      width: 175px;
+      top: 0;
+      right: -175px;
+      text-align: right;
+      z-index: 2;
+      border-radius: 5px;
+      transition: .8s;
+    }
+    .nav-link ul li {
+      display: block;
+    }
+    .nav-link ul {
+      padding: 5px;
+    }
+    nav .fa {
+      display: block;
+      color: #5A6534;
+      text-align: left;
+      margin: 15px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    .r {
+      flex-direction: column;
+    }
+    html, body {
+      overflow-x: hidden;
     }
   }
+  
   
