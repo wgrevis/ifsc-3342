@@ -108,9 +108,6 @@ nav img{
     padding-top: 40px;
 }
 
-.information p{
-    text-transform: uppercase;
-}
 
 h1{
     font-size: 50px;
@@ -234,7 +231,21 @@ h6 a{
   object-fit: cover;
 }
 
-
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+  
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
 
 
 
@@ -383,6 +394,9 @@ nav .fa{
     }
     .r {
       flex-direction: column;
+    }
+    .footer-bottom {
+        font-size: 10px;
     }
     html, body {
       overflow-x: hidden;
